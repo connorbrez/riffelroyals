@@ -1,0 +1,140 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Portfolio for Connor Brezinsky">
+    <meta name="author" content="Connor Brezinsky">
+    <title>Riffel Royals </title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css">
+</head>
+
+<body>
+  <body>
+      <nav class="navbar navbar-default navbar-fixed-top navbar-inverse">
+          <div class="container-fluid">
+              <div class="navbar-header">
+                  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-7" aria-expanded="false">
+                      <span class="sr-only">Toggle navigation</span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                      <span class="icon-bar"></span>
+                  </button>
+                  <a class="navbar-brand" href="index.html">
+                      <img style="max-width:55px; margin-top: -25px;" class="img-responsive" src="img/logo.png">
+                  </a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-7">
+                  <ul class="nav navbar-nav navbar-left">
+                      <li class=""><a href="index.html">Home</a></li>
+                      <li class="dropdown">
+                          <a href="" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">About Us<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="about.html">About</a></li>
+                              <li><a href="bell.html">Bell Schedule</a></li>
+                              <li><a href="announcements.html">Announcements</a></li>
+                              <li><a href="staff.html">Staff</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="calendar.html">Calendars</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="bench.html">Memorial Bench</a></li>
+                          </ul>
+                      </li>
+
+
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Students<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="pdf/student_handbook_2015:6.pdf">Handbook</a></li>
+                              <li><a href="grad.html">Grad</a></li>
+                              <li><a href="gradAwards.html">Grad Awards</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="christianservices.html">Christian Services</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="spiritwear.html">Spiritwear</a></li>
+                              <li><a href="src.html">SRC</a></li>
+                              <li><a href="extra.html">Extra Curricular</a></li>
+                          </ul>
+                      </li>
+                      <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Parents<span class="caret"></span></a>
+                          <ul class="dropdown-menu">
+                              <li><a href="#">CSCC</a></li>
+                              <li><a href="pdf/newsletter-march2016.pdf">Newsletter</a></li>
+                              <li role="separator" class="divider"></li>
+                              <li><a href="#">Attendance</a></li>
+                          </ul>
+                      </li>
+                      <li><a href="http://riffelstudentservices.weebly.com/">Student Services</a></li>
+                      <li><a href="http://michaelariffellibrary.weebly.com/">Resource Center</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                  </ul>
+                  <ul class="nav navbar-nav navbar-right">
+                      <!--  <li><a class="navlink" style="color: #751E1E;" href="http://twitter.com/connorbrezinsky"><i class="fa fa-twitter fa-2x" style="font-size:20px; color: #BD0F00;"></i></a></li>
+                      <li><a class="navlink" style="color: #751E1E;" href="https://instagram.com/connor.brez/"><i class="fa fa-instagram fa-2x"  style="font-size:20px; color: #BD0F00;"></i></a></li> -->
+                  </ul>
+              </div>
+          </div>
+      </nav>
+    <!-- Begin page content -->
+    <div class="container ">
+        <div class="row" style="margin-top:100px;">
+            <div class="col-md-6">
+                <script src='https://maps.googleapis.com/maps/api/js?v=3.exp'></script>
+                <div style='overflow:hidden;height:400px;width:520px;-webkit-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.86);-moz-box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.86);box-shadow: 0px 0px 30px 0px rgba(50, 50, 50, 0.86);'>
+                    <div id='gmap_canvas' style='height:400px;width:520px;'></div>
+                    <style>
+                        #gmap_canvas img {
+                            max-width: none!important;
+                            background: none!important
+                        }
+                    </style>
+                </div>
+                <a href='https://embedmaps.net'>Location</a>
+                <script type='text/javascript' src='https://embedmaps.com/google-maps-authorization/script.js?id=af43f28599de4c3e98003a36c90a8198aff1ab80'></script>
+                <script type='text/javascript'>
+                    function init_map() {
+                        var myOptions = {
+                            zoom: 15,
+                            center: new google.maps.LatLng(50.4947548, -104.66269249999999),
+                            mapTypeId: google.maps.MapTypeId.TERRAIN
+                        };
+                        map = new google.maps.Map(document.getElementById('gmap_canvas'), myOptions);
+                        marker = new google.maps.Marker({
+                            map: map,
+                            position: new google.maps.LatLng(50.4947548, -104.66269249999999)
+                        });
+                        infowindow = new google.maps.InfoWindow({
+                            content: '<strong>Michael A. Riffel Highschool</strong><br>5757 Rochdale Blvd. Regina, SK<br> Regina<br>'
+                        });
+                        google.maps.event.addListener(marker, 'click', function() {
+                            infowindow.open(map, marker);
+                        });
+                        infowindow.open(map, marker);
+                    }
+                    google.maps.event.addDomListener(window, 'load', init_map);
+                </script>
+            </div>
+            <div class="col-md-6">
+                <h1> School Contacts </h1>
+                <h4 style="font-weight:300;">
+               <i class="fa fa-phone"></i> (306) 791-7260
+               <h4/>
+               <h4 style="font-weight:300;"><i class="fa fa-envelope-o"></i> riffelhighschool@rcsd.ca</h4>
+                <h4 style="font-weight:300;"><i class="fa fa-fax"></i> (306) 543-0068</h4>
+                <h1> Attendance Contacts </h1>
+                <h4 style="font-weight:300;">
+               <i class="fa fa-phone"></i> (306) 791-7260
+               <h4/>
+               <h4 style="font-weight:300;"><i class="fa fa-envelope-o"></i> riffelattendance@rcsd.ca</h4>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.js" integrity="sha256-iT6Q9iMJYuQiMWNd9lDyBUStIq/8PuOW33aOqmvFpqI=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+</body>
+
+</html>
